@@ -1,0 +1,18 @@
+<%= form_tag "/tshirt/buy" do %>
+  <p>Modelo:</p>
+  <%= radio_button_tag(:gender, "male") %>
+	<%= label_tag(:gender_male, "Masculino") %>
+	<%= radio_button_tag(:gender, "female") %>
+	<%= label_tag(:gender_female, "Feminino") %>
+  
+	<p>Tamanho:</p>
+	<%= radio_button_tag(:size, "small") %>
+	<%= label_tag(:size_small, "P") %>
+	<%= radio_button_tag(:size, "medium") %>
+	<%= label_tag(:size_medium, "M") %>
+	<%= radio_button_tag(:size, "large") %>
+	<%= label_tag(:size_large, "G") %>
+	<%= radio_button_tag(:size, "extra large") %>
+	<%= label_tag(:size_extra_large, "GG") %>
+  <%= submit_tag "Comprar" %>
+<% end %>

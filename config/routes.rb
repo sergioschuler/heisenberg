@@ -1,4 +1,6 @@
 Heisenberg::Application.routes.draw do
+  root "tshirt#index"
+  match '/tshirt/buy' => 'tshirt#buy', via: [:post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

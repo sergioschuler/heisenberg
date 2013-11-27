@@ -1,0 +1,6 @@
+<% @tshirts.each do |tshirt| %>
+	<h1><%= tshirt.name %> <small>- Masculina ou Feminina </small></h1></h1>
+	<%= image_tag image_url(tshirt.image) %>
+	<p><%= number_to_currency(tshirt.price, unit: 'R$') %></p>
+	<%= render 'size' %>
+<% end %>
