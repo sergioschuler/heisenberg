@@ -1,6 +1,93 @@
-<% @tshirts.each do |tshirt| %>
-	<h1><%= tshirt.name %> <small>- Masculina ou Feminina </small></h1></h1>
-	<%= image_tag image_url(tshirt.image) %>
-	<p><%= number_to_currency(tshirt.price, unit: 'R$') %></p>
-	<%= render 'size' %>
-<% end %>
+<div class="row tshirt">
+	<% @tshirts.each do |tshirt| %>
+		<div class="col-md-5 col-xs-12 text-center">	
+			<%= image_tag image_url(tshirt.image) %>
+		</div>
+		<div class="col-md-7 col-xs-12">	
+			<h1>
+				<%= tshirt.name %>
+				<%= number_to_currency(tshirt.price, unit: 'R$') %>
+				<small>Masculina ou Feminina</small>
+			</h1>
+
+			<%= render 'size' %>
+			<div class="row">
+				<div class="col-md-12">
+					<p>Camiseta 100% Poliester - Com toque de malha PV, super macia e confortável.
+						Não protege contra químicos tóxicos, não dê uma de Breaking Bad com ela. 
+						Estampa em sublimação (não mancha, não sai com lavagem e é altamente durável)
+					</p>
+
+					<div class="panel-group" id="accordion">
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					        	Dimensões das camisetas
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse">
+      					<div class="panel-body">
+									<div class="col-md-6">
+										<h4>Masculino</h4>
+										<table class="table">
+				  						<th>Tam</th>
+				  						<th>Altura</th>
+				  						<th>Largura <small>(ombros)</small></th>
+				  						<tr>
+				  							<td>P</td>
+				  							<td>66</td>
+				  							<td>48</td>
+				  						</tr>	
+				  						<tr>
+				  							<td>M</td>
+				  							<td>68</td>
+				  							<td>51</td>
+				  						</tr>	
+				  						<tr>
+				  							<td>G</td>
+				  							<td>71</td>
+				  							<td>53</td>
+				  						</tr>	
+				  						<tr>
+				  							<td>GG</td>
+				  							<td>74</td>
+				  							<td>55</td>
+				  						</tr>	
+										</table>
+									</div>
+
+									<div class="col-md-6">
+										<h4>Feminino (Babylook)</h4>
+										<table class="table">
+				  						<th>Tam</th>
+				  						<th>Altura</th>
+				  						<th>Largura <small>(cintura)</small></th>
+				  						<tr>
+				  							<td>P</td>
+				  							<td>55</td>
+				  							<td>37</td>
+				  						</tr>	
+				  						<tr>
+				  							<td>M</td>
+				  							<td>57</td>
+				  							<td>39</td>
+				  						</tr>	
+				  						<tr>
+				  							<td>G</td>
+				  							<td>59</td>
+				  							<td>41</td>
+				  						</tr>	
+										</table>
+									</div>
+									<p>Os tamanhos descritos podem variar em 2cm para mais ou para menos.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<% end %>
+</div>

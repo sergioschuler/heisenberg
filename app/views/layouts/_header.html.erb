@@ -1,1 +1,6 @@
-<%= image_tag image_url('heisenberg_camisetas_logo.png') %>
+<div class="container text-center" >
+	<%= link_to(image_tag(image_url('heisenberg_camisetas_logo.gif')), root_path) %>
+	<% flash.each do |name, msg| %>
+     <%= content_tag(:div, msg, class: "alert alert-info") %>
+	<% end %>
+</div>
