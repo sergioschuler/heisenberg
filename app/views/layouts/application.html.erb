@@ -10,11 +10,11 @@
   <meta property="og:title"  			content="Camiseta Heisenberg Breaking Bad" /> 
   <meta property="og:description" content="Compre a camiseta clássica do Heisenberg da série Breaking Bad por R$39,90" /> 
   <meta property="og:image"  			content="https://s3.amazonaws.com/heisenbergcamisetas/heisenberg_classica_big.jpg" /> 
+  <%= render 'layouts/google_analytics' if Rails.env.production? %>
 </head>
 <body>
 	<%= render 'layouts/header' %>
 	<%= yield %>
 	<%= render 'layouts/footer' %>
-  <%= render 'layouts/google_analytics' if Rails.env.production? %>
 </body>
 </html>
