@@ -1,7 +1,7 @@
 <div class="container text-center">
 	<p>Clique no botão abaixo para ser redirecionado para o PagSeguro<p>
 	<% if params[:gender] == "male" %>
-		<% if params[:size] == "small" %>
+		<% if params[:size] == "P" %>
 			<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 			<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" id="pagseguro">
 			<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -9,7 +9,7 @@
 			<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 			</form>
 			<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-		<% elsif params[:size] == "medium" %>
+		<% elsif params[:size] == "M" %>
 			<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 			<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" id="pagseguro">
 			<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -17,7 +17,7 @@
 			<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 			</form>
 			<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-		<% elsif params[:size] == "large" %>
+		<% elsif params[:size] == "G" %>
 			<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 			<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" id="pagseguro">
 			<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -25,7 +25,7 @@
 			<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 			</form>
 			<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-		<% elsif params[:size] == "extra large" %>
+		<% elsif params[:size] == "GG" %>
 			<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 			<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" id="pagseguro">
 			<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -35,7 +35,7 @@
 			<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
 		<% end %>
 	<% elsif params[:gender] == "female" %>
-		<% if params[:size] == "small" %>
+		<% if params[:size] == "P" %>
 			<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 			<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" id="pagseguro">
 			<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -43,7 +43,7 @@
 			<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 			</form>
 			<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-		<% elsif params[:size] == "medium" %>
+		<% elsif params[:size] == "M" %>
 			<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 			<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" id="pagseguro">
 			<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -51,7 +51,7 @@
 			<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 			</form>
 			<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-		<% elsif params[:size] == "large" %>
+		<% elsif params[:size] == "G" %>
 			<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 			<form target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" id="pagseguro">
 			<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -59,7 +59,7 @@
 			<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 			</form>
 			<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-		<% elsif params[:size] == "extra large" %>
+		<% elsif params[:size] == "GG" %>
 			<p>GG babylook não disponível</p>
 		<% end %>
 	<% end %>

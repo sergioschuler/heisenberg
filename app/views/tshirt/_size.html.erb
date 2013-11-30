@@ -12,26 +12,10 @@
   </div>
 
   <div class="form-group">
-		<label for="sizeRadio">Tamanho:</label>
-		<div class="radio-inline">
-			<%= radio_button_tag(:size, "small") %>
-			<%= label_tag(:size_small, "P") %>
-		</div>
-		<div class="radio-inline">
-			<%= radio_button_tag(:size, "medium") %>
-			<%= label_tag(:size_medium, "M") %>
-		</div>
-		<div class="radio-inline">
-			<%= radio_button_tag(:size, "large", checked: true) %>
-			<%= label_tag(:size_large, "G") %>
-		</div>
-		<div class="radio-inline">
-			<%= radio_button_tag(:size, "extra large") %>
-			<%= label_tag(:size_extra_large, "GG") %>
-		</div>
-	  
-		<div class="form-group">
-		  <%= submit_tag "Comprar", class: "btn btn-default" %>
-		</div>
+  	<%= select_tag :size, options_for_select([ "P", "M", "G", "GG"], "M"), class: "form-control" %>
+ 	</div>
+
+ 	<div class="form-group">
+		  <%= button_tag "comprar", type: "submit", class: "btn btn-success" %>
 	</div>
 <% end %>
