@@ -3,8 +3,7 @@
 Ghetto style, totally unRESTful, lots of repeated code. MVP FTW.
 
 * To-do
-- Add size as combo, not radio
-- Add tshirt size in image based on size selection
+- Add shirt size as part of the model
 - Auto-redirect to PagSeguro
 - Pay with integrated PagSeguro, not hackjob button craziness
 - Fix issue with logo img hover
